@@ -1,0 +1,115 @@
+.wrapper {
+    margin-top: 74px;
+}
+
+.slogan {
+    position: fixed;
+    // display: inline-block;
+    font-size: 8.25rem;
+    font-family: perpetua titling mt;
+    min-width: 1000px;
+    top: 360px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 1;
+}
+
+.container {
+}
+
+.header {
+    position: relative;
+
+    .video {
+        width: 25%;
+        margin-top: 400px;
+        margin-left: 50%;
+        z-index: -1;
+    }
+
+    .play-reel {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        width: 150px;
+        height: 150px;
+        line-height: 180px;
+        border: 1px solid #fff;
+        border-radius: 999px;
+        top: 540px;
+        left: 50%;
+        transform: translate(-50%);
+        z-index: 2;
+        transition: 1s;
+        cursor: pointer;
+
+        .play,
+        .reel {
+            padding: 2px;
+        }
+
+        &:hover {
+            .play {
+                line-height: 150px;
+                transition: 0.2s;
+            }
+            .reel {
+                line-height: 150px;
+                transition: 0.2s;
+                transition-delay: 0.2s;
+            }
+            background-color: #00a19a;
+        }
+
+        &:not(:hover) {
+            .play {
+                line-height: 180px;
+                transition: 0.2s;
+            }
+            .reel {
+                line-height: 180px;
+                transition: 0.2s;
+                transition-delay: 0.2s;
+            }
+        }
+    }
+}
+
+.line {
+    height: 0.8px;
+    background-color: #fff;
+    // width: 100%;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
+}
+
+.bottom {
+    position: relative;
+    // display: flex;
+    // justify-content: center;
+    // width: 100%;
+    height: 2000px;
+    background-color: #00a19a;
+    padding-top: 300px;
+    z-index: 2;
+}
+
+.project {
+    position: sticky;
+    position: -webkit-sticky;
+    top: 280px;
+    font-size: 8.25rem;
+    font-family: perpetua titling mt;
+    width: 60%;
+    margin: auto;
+    margin-bottom: 160px;
+    text-align: center;
+}
+
+
+.test{
+    padding-left: 20px;
+}
