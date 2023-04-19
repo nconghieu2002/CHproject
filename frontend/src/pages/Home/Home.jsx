@@ -3,6 +3,7 @@ import styles from './Home.module.scss';
 
 import Represent from '@/components/Represent';
 import CardItem from '@/components/CardItem';
+import Client from '@/components/Client/Client';
 
 const cx = classNames.bind(styles);
 
@@ -33,6 +34,8 @@ function Home() {
                 <div className={cx('project')}>PROJECTS THAT MAKE US BLUSH</div>
                 <CardItem className={cx('test')} />
             </div>
+            <div className={cx('big-line')}></div>
+            <Client />
         </div>
     );
 }

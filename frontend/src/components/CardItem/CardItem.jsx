@@ -13,14 +13,16 @@ function CardItem() {
                 loop
                 // autoplay
             />
-            <div className={cx('name')}>CONG HIEU</div>
-            <div className={cx('slider')}>
-                <div className={cx('title')}>CONG HIEU</div>
-                <div className={cx('title')}>CONG HIEU</div>
-                <div className={cx('title')}>CONG HIEU</div>
-                <div className={cx('title')}>CONG HIEU</div>
-                <div className={cx('title')}>CONG HIEU</div>
-                <div className={cx('title')}>CONG HIEU</div>
+            <div className={cx('bottom')}>
+                <div className={cx('name')}>CONG HIEU</div>
+                <div className={cx('slider')}>
+                    <div className={cx('title')}>CONG HIEU</div>
+                    <div className={cx('title')}>CONG HIEU</div>
+                    <div className={cx('title')}>CONG HIEU</div>
+                    <div className={cx('title')}>CONG HIEU</div>
+                    <div className={cx('title')}>CONG HIEU</div>
+                    <div className={cx('title')}>CONG HIEU</div>
+                </div>
             </div>
             <div className={cx('line')}></div>
         </div>
