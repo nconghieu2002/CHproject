@@ -3,7 +3,7 @@ import styles from './Home.module.scss';
 
 import Represent from '@/components/Represent';
 import CardItem from '@/components/CardItem';
-import Client from '@/components/Client';
+import Connective from '@/components/Connective';
 
 const cx = classNames.bind(styles);
 
@@ -36,7 +36,7 @@ function Home() {
                 <CardItem />
                 <div className={cx('big-line')}></div>
                 <div className={cx('z-index')}>
-                    <Client />
+                    <Connective />
                 </div>
             </div>
         </div>
