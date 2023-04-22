@@ -109,12 +109,15 @@
     text-align: center;
 }
 
-.test {
-    padding-left: 20px;
-}
-
 .big-line {
-    height: 1.3px;
+    height: 1.4px;
     background-color: #fff;
     margin-top: 100px;
+}
+
+.z-index {
+    background-color: #00a19a;
+    width: 100%;
+    position: relative;
+    z-index: 2;
 }

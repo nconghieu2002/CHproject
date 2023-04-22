@@ -2,17 +2,54 @@
     position: relative;
     background-color: #00a19a;
     z-index: 2;
-    margin-top: 24px;
+    padding-top: 24px;
     margin-left: 25%;
+    line-height: 1.2;
+
 }
 
 .title {
-    font-size: 1.875rem;
+    font-size: 1.75rem;
+    margin-bottom: 24px;
 }
 
-.trademark{
+.line {
+    height: 0.8px;
+    background-color: #fff;
 }
 
-.image{
-    background-color: transparent;
+.line-right {
+    border-right: 0.8px solid #fff;
+}
+
+.clients {
+    display: flex;
+    flex-direction: column;
+
+    .trademark-top,
+    .trademark-bottom {
+        display: flex;
+    }
+
+    .trademark {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 25%;
+        padding: 50px;
+    }
+
+    .image {
+        width: 25%;
+    }
+
+    .name {
+        font-size: 2rem;
+        margin-left: 10px;
+    }
+}
+
+.content {
+    font-size: 1.185rem;
+    padding: 24px 0;
 }

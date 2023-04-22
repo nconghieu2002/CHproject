@@ -3,7 +3,7 @@ import styles from './Home.module.scss';
 
 import Represent from '@/components/Represent';
 import CardItem from '@/components/CardItem';
-import Client from '@/components/Client/Client';
+import Client from '@/components/Client';
 
 const cx = classNames.bind(styles);
 
@@ -32,10 +32,13 @@ function Home() {
             <div className={cx('line')}></div>
             <div className={cx('bottom')}>
                 <div className={cx('project')}>PROJECTS THAT MAKE US BLUSH</div>
-                <CardItem className={cx('test')} />
+                <CardItem />
+                <CardItem />
+                <div className={cx('big-line')}></div>
+                <div className={cx('z-index')}>
+                    <Client />
+                </div>
             </div>
-            <div className={cx('big-line')}></div>
-            <Client />
         </div>
     );
 }

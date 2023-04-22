@@ -1,0 +1,52 @@
+.bottom {
+    position: relative;
+    background-color: #00a19a;
+    z-index: 2;
+}
+
+.wrapper {
+    font-size: 1.185rem;
+    margin-left: 25%;
+}
+
+.information {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 60px 0;
+}
+
+.line {
+    height: 0.8px;
+    background-color: #fff;
+}
+
+.contact,
+.social {
+    display: flex;
+    flex-direction: column;
+}
+
+.address {
+    max-width: 60px;
+}
+
+.slider {
+    font-size: 8.25rem;
+    font-family: perpetua titling mt;
+    padding: 20px 0;
+    overflow: hidden;
+
+    .title {
+        animation: slide 12s linear infinite;
+    }
+
+    @keyframes slide {
+        0% {
+            transform: translate(100%, 0);
+        }
+        100% {
+            transform: translate(-80%, 0);
+        }
+    }
+}
