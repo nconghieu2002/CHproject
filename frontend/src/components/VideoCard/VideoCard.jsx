@@ -1,18 +1,22 @@
 import classNames from 'classnames/bind';
-import styles from './CardItem.module.scss';
+import styles from './VideoCard.module.scss';
 
 const cx = classNames.bind(styles);
 
-function CardItem() {
+function VideoCard({ primary }) {
+    const classes = cx('wrapper', { primary });
+
     return (
-        <div className={cx('wrapper')}>
-            <video
-                className={cx('video')}
-                src="https://5scontent.com/app/uploads/2022/04/Snippet_KOTI-1.mp4"
-                controls
-                loop
-                // autoplay
-            />
+        <div className={classes}>
+            <div className={cx('container')}>
+                <video
+                    className={cx('video')}
+                    src="https://5scontent.com/app/uploads/2022/04/Snippet_KOTI-1.mp4"
+                    controls
+                    loop
+                    // autoplay
+                />
+            </div>
             <div className={cx('bottom')}>
                 <div className={cx('name')}>CONG HIEU</div>
                 <div className={cx('slider')}>
@@ -29,4 +33,4 @@ function CardItem() {
     );
 }
 
-export default CardItem;
+export default VideoCard;

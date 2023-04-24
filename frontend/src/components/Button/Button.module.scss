@@ -1,16 +1,16 @@
 .wrapper {
     position: relative;
-    display: inline-block;
-    height: 400px;
-    width: auto;
-    background-color: #00a19a;
+    // display: inline-block;
+    // width: auto;
+    // background-color: #00a19a;
+    cursor: pointer;
 
     &:hover {
         .circle {
             border-radius: 0;
             left: 1.5rem;
         }
-        
+
         .line {
             width: 75%;
         }
@@ -25,7 +25,7 @@
     border-radius: 50%;
     border: 1px solid #fff;
     border-right: 1px solid transparent;
-    transition: 1s;
+    transition: 0.75s;
 }
 
 .container {
@@ -45,6 +45,42 @@
         width: 0;
         background-color: #fff;
         margin-top: -1rem;
-        transition: 1s;
+        transition: 0.75s;
+    }
+}
+
+.primary {
+    .container {
+        width: 90px;
+    }
+
+    &:hover {
+        .circle {
+            left: 0;
+        }
+    }
+}
+
+.short {
+    .container {
+        width: 70px;
+    }
+
+    &:hover {
+        .circle {
+            left: 0;
+        }
+    }
+}
+
+.long {
+    .container {
+        width: 100px;
+    }
+
+    &:hover {
+        .circle {
+            left: 1rem;
+        }
     }
 }

@@ -1,6 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './Represent.module.scss';
 
+import Button from '@/components/Button';
+
 const cx = classNames.bind(styles);
 
 function Represent() {
@@ -20,7 +22,9 @@ function Represent() {
                         5S IS A CREATIVE STUDIO BORN AND BRED IN MONTREAL. OUR APPROACH INFUSES STRATEGIC INSIGHT INTO
                         STORYTELLING FOR BRANDS AND AGENCIES SEEKING TO STAND OUT.
                     </div>
-                    <button>LEARN MORE</button>
+                    <div className={cx('btn')}>
+                        <Button>Learn more</Button>
+                    </div>
                 </div>
             </div>
         </div>

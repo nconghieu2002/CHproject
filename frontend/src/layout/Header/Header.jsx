@@ -46,22 +46,22 @@ function Header() {
                 </div>
                 <div className={cx('nav-bar')}>
                     <div className={cx('small-wrapper')}>
-                        <NavLink>WORK</NavLink>
+                        <NavLink to={'/work'}>WORK</NavLink>
                         <AiOutlineLoading3Quarters className={cx('load-icon')} />
                     </div>
                     <div className={cx('line')}></div>
                     <div className={cx('small-wrapper')}>
-                        <NavLink>ABOUT</NavLink>
+                        <NavLink to={'/about'}>ABOUT</NavLink>
                         <AiOutlineLoading3Quarters className={cx('load-icon')} />
                     </div>
                     <div className={cx('line')}></div>
                     <div className={cx('small-wrapper')}>
-                        <NavLink>STUDIO</NavLink>
+                        <NavLink to={'/studio'}>STUDIO</NavLink>
                         <AiOutlineLoading3Quarters className={cx('load-icon')} />
                     </div>
                     <div className={cx('line')}></div>
                     <div className={cx('small-wrapper')}>
-                        <NavLink>CONTACT</NavLink>
+                        <NavLink to={'/contact'}>CONTACT</NavLink>
                         <AiOutlineLoading3Quarters className={cx('load-icon')} />
                     </div>
                 </div>

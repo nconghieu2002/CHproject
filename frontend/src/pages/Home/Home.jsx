@@ -2,8 +2,9 @@ import classNames from 'classnames/bind';
 import styles from './Home.module.scss';
 
 import Represent from '@/components/Represent';
-import CardItem from '@/components/CardItem';
+import VideoCard from '@/components/VideoCard';
 import Connective from '@/components/Connective';
+import Button from '@/components/Button';
 
 const cx = classNames.bind(styles);
 
@@ -32,8 +33,11 @@ function Home() {
             <div className={cx('line')}></div>
             <div className={cx('bottom')}>
                 <div className={cx('project')}>PROJECTS THAT MAKE US BLUSH</div>
-                <CardItem />
-                <CardItem />
+                <div className={cx('list-video')}>
+                    <VideoCard />
+                    <VideoCard />
+                </div>
+                <div className={cx('btn')}><Button long>See more</Button></div>
                 <div className={cx('big-line')}></div>
                 <div className={cx('z-index')}>
                     <Connective />

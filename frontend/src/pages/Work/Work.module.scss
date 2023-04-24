@@ -1,0 +1,106 @@
+.wrapper {
+    position: relative;
+    margin-top: 100px;
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.left-wrapper {
+    position: fixed;
+    width: 25%;
+    top: 130px;
+    z-index: 3;
+
+    .title {
+        font-family: perpetua titling mt;
+        font-size: 1.875rem;
+    }
+
+    .container {
+        line-height: 1.6;
+        margin-top: 20px;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+    }
+
+    .left-line {
+        width: 22px;
+        height: 0.8px;
+        background-color: #fff;
+        margin-right: 8px;
+    }
+
+    .text {
+        font-size: 1.625rem;
+    }
+}
+
+.right-wrapper {
+    display: flex;
+    // justify-content: space-between;
+    width: 100%;
+    margin-left: 25%;
+    margin-top: 74px;
+
+    .left-container {
+        width: 50%;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        height: 300px;
+    }
+
+    .right-container-faq {
+        margin-left: 5%;
+    }
+
+    .title {
+        font-family: perpetua titling mt;
+        font-size: 2.875rem;
+    }
+
+    .content {
+        font-size: 1.625rem;
+    }
+
+    .list-video {
+        .video {
+            width: 95%;
+            margin-top: 26px;
+        }
+    }
+
+    .list-video + .list-video {
+        .line-top {
+            display: none;
+        }
+    }
+
+    .list-video-right {
+        .video {
+            margin-left: 5%;
+        }
+    }
+
+    .main-line {
+        width: 0.8px;
+        background-color: #fff;
+    }
+
+    .line-top,
+    .line-bottom {
+        height: 0.8px;
+        background-color: #fff;
+    }
+
+    .right-container {
+        width: 50%;
+    }
+}

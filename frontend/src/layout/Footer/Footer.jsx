@@ -30,12 +30,11 @@ function Footer() {
                 <div className={cx('title')}>WELCOME TO MY WEBSITE</div>
             </div>
             <div className={cx('line')}></div>
-            <div className='button'>
-                <div className={cx('work-btn')}>WORK</div>
-                <div className={cx('about-btn')}>ABOUT</div>
-                <div className={cx('studio-btn')}>STUDIO</div>
-                <div className={cx('contact-btn')}>CONTACT</div>
-                <Button />
+            <div className={cx('button')}>
+                <Button short>WORK</Button>
+                <Button short>ABOUT</Button>
+                <Button short>STUDIO</Button>
+                <Button primary>CONTACT</Button>
             </div>
         </div>
     );
