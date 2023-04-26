@@ -4,7 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 
 const cx = classNames.bind(styles);
 
-function Slider({ children }) {
+function Slider({ children, primary }) {
     const [marginLeft, setMarginLeft] = useState('160px');
     const teamRef = useRef(null);
 
@@ -22,8 +22,8 @@ function Slider({ children }) {
 
                 let newMarginLeft = 100 + ((scrollTop - scrollTopMin) / (scrollTopMax - scrollTopMin)) * 100;
 
-                if (newMarginLeft >= 600) {
-                    newMarginLeft = 600;
+                if (newMarginLeft >= 650) {
+                    newMarginLeft = 650;
                 }
 
                 const strMarginLeft = `${newMarginLeft}px`;
@@ -38,8 +38,10 @@ function Slider({ children }) {
         };
     }, []);
 
+    const classes = cx('wrapper', { primary });
+
     return (
-        <div className={cx('wrapper')}>
+        <div className={classes}>
             <div className={cx('title')} style={{ marginLeft }} ref={teamRef}>
                 {children}
             </div>

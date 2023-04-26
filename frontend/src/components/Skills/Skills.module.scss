@@ -1,0 +1,57 @@
+.wrapper {
+    position: relative;
+    background-color: #00a19a;
+    z-index: 2;
+    padding-top: 24px;
+    margin-left: 25%;
+}
+
+.title {
+    font-size: 1.75rem;
+    margin: 24px 0;
+}
+
+.line {
+    height: 0.8px;
+    background-color: #fff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+
+    .card-left,
+    .card-right {
+        display: flex;
+        align-items: center;
+        height: 180px;
+        width: 50%;
+        border-bottom: 0.8px solid #fff;
+    }
+
+    .card-right {
+        border-left: 0.8px solid #fff;
+        .icon {
+            margin-left: 20px;
+        }
+    }
+
+    .icon {
+        font-size: 6rem;
+    }
+
+    .content {
+        width: 65%;
+        margin-left: 10%;
+    }
+
+    .header {
+        font-size: 1.875rem;
+        font-family: perpetua titling mt;
+        margin-bottom: 12px;
+    }
+
+    .text {
+        font-size: 1.1875rem;
+    }
+}

@@ -3,7 +3,13 @@
     .title {
         font-family: perpetua titling mt;
         font-size: 8.25rem;
-        max-width: 600px;
+        max-width: 700px;
         margin-bottom: 100px;
+    }
+}
+
+.primary {
+    .title {
+        max-width: 900px;
     }
 }

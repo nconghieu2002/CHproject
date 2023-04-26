@@ -1,9 +1,8 @@
 import classNames from 'classnames/bind';
 import styles from './About.module.scss';
-import { NavLink } from 'react-router-dom';
-
 import MemberCard from '@/components/MemberCard';
 import Slider from '@/components/Slider/Slider';
+import Skills from '@/components/Skills/Skills';
 import Connective from '@/components/Connective';
 
 const cx = classNames.bind(styles);
@@ -14,22 +13,30 @@ function About() {
             <div className={cx('navbar')}>
                 <div className={cx('content')}>
                     <div className={cx('left-line')}></div>
-                    <NavLink className={cx('text')}>Story</NavLink>
+                    <div className={cx('text')}>
+                        <a href="#story">Story</a>
+                    </div>
                 </div>
                 <div className={cx('content')}>
                     <div className={cx('left-line')}></div>
-                    <NavLink className={cx('text')}>Team</NavLink>
+                    <a href="#team" className={cx('text')}>
+                        Team
+                    </a>
                 </div>
                 <div className={cx('content')}>
                     <div className={cx('left-line')}></div>
-                    <NavLink className={cx('text')}>Skills</NavLink>
+                    <a href="#skills" className={cx('text')}>
+                        Skills
+                    </a>
                 </div>
                 <div className={cx('content')}>
                     <div className={cx('left-line')}></div>
-                    <NavLink className={cx('text')}>Clients</NavLink>
+                    <a href="#clients" className={cx('text')}>
+                        Clients
+                    </a>
                 </div>
             </div>
-            <div className={cx('story')}>
+            <div id="story" className={cx('story')}>
                 <div className={cx('title')}>
                     WE'VE BROKEN FREE OF AGENCY VS. PRODUCTION SILOS AND HAVE DEVELOPED A PLACE WHERE BOTH CREATIVE AND
                     ANALYTICAL MINDS CAN THRIVE.
@@ -45,15 +52,19 @@ function About() {
                     </div>
                 </div>
             </div>
-            <div className={cx('team')}>
+            <div id="team" className={cx('team')}>
                 <Slider>WE ARE A TIGHTLY-KNIT TEAM.</Slider>
                 <MemberCard />
             </div>
-            <div className={cx('team')}>
-                <Slider>WE ARE A TIGHTLY-KNIT TEAM.</Slider>
-                <MemberCard />
+            <div id="skills" className={cx('skills')}>
+                <Slider>WE WORK DAY IN DAY OUT TO ELEVATE BRANDS.</Slider>
+                <Skills />
             </div>
-            <div className={cx('clients')}></div>
+            <div id="clients" className={cx('clients')}>
+                <Slider primary>WE CULTIVATE RELATIONSHIPS THROUGH CONTENT.</Slider>
+                <div className={cx('line')}></div>
+                <Connective />
+            </div>
         </div>
     );
 }
