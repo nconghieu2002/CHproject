@@ -5,7 +5,7 @@ import { CiSearch } from 'react-icons/ci';
 import { AiOutlineLoading3Quarters } from 'react-icons/ai';
 import { useEffect, useState } from 'react';
 
-import logo from '@/assets/images/logo.png';
+import logo from '@/assets/images/logo-white.png';
 
 const cx = classNames.bind(styles);
 

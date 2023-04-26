@@ -1,0 +1,44 @@
+.wrapper {
+    margin-left: 20%;
+    margin-right: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.member {
+    width: 31%;
+    margin-bottom: 60px;
+}
+
+.member-2 {
+    margin-top: -50px;
+}
+
+.member-3 {
+    margin-top: -100px;
+}
+
+.image {
+    width: 100%;
+    object-fit: cover;
+    border: 0.8px solid transparent;
+    transition: 0.5s;
+
+    &:hover {
+        border: 0.8px solid #fff;
+    }
+}
+
+.name {
+    font-size: 1.625rem;
+    margin: 20px 0;
+}
+
+.job {
+    font-size: 1.1875rem;
+}
+
+.mail {
+    font-size: 1.1875rem;
+}
